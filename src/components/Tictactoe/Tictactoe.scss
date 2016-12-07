@@ -1,0 +1,57 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  color: #043cc3;
+  margin: auto;
+  padding: 2em 1em;
+  text-align: center;
+  // background: url('http://feldmancreative.com/wp-content/uploads/2014/05/blank_notebook_paper_by_bypri-d39707e.jpg') center center;
+  background-size: cover;
+  width: 800px;
+  height: 100%;
+}
+
+.informationBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+  font-family: 'Nothing You Could Do', cursive;
+}
+
+.userBox {
+  border: 2px solid transparent;
+  padding: 10px;
+}
+
+.active {
+  border-bottom-right-radius: 41px;
+  border-bottom-left-radius: 21px;
+  border-top-left-radius: 41px;
+  border-top-right-radius: 12px;
+  border: 2px solid rgba(#c30404, .6);
+
+  animation-duration: 300ms;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+   from {
+      border-color: rgba(#c30404, .6);
+   }
+   to {
+      border-color: rgba(#c30404, .0);
+   }
+ }
+
+.menuBox {
+  position: fixed;
+  top: 0;
+  right: 0;
+  text-align: right;
+  width: 150px;
+  padding: 5px;
+
+}
